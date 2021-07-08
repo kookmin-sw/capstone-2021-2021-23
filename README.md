@@ -1,77 +1,100 @@
-[![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=370246&assignment_repo_type=GroupAssignmentRepo)
-# Welcome to GitHub
+# 범죄, 멈춰!
 
-캡스톤 팀 생성을 축하합니다.
-
-## 팀소개 및 페이지를 꾸며주세요.
-
-- 프로젝트 소개
-  - 프로젝트 설치방법 및 데모, 사용방법, 프리뷰등을 readme.md에 작성.
-  - Api나 사용방법등 내용이 많을경우 wiki에 꾸미고 링크 추가.
-
-- 팀페이지 꾸미기
-  - 프로젝트 소개 및 팀원 소개
-  - index.md 예시보고 수정.
-
-- GitHub Pages 리파지토리 Settings > Options > GitHub Pages 
-  - Source를 marster branch
-  - Theme Chooser에서 태마선택
-  - 수정후 팀페이지 확인하여 점검.
-
-**팀페이지 주소** -> https://kookmin-sw.github.io/ '{{자신의 리파지토리 아이디}}'
-
-**예시)** 2020년 0조  https://kookmin-sw.github.io/capstone-2020-0/
+## 1. 프로젝트 소개
 
 
-## 내용에 아래와 같은 내용들을 추가하세요.
-
-### 1. 프로잭트 소개
-
-프로젝트
-
-### 2. 소개 영상
-
-프로젝트 소개하는 영상을 추가하세요
-
-### 3. 팀 소개
-
-팀을 소개하세요.
-
-팀원정보 및 담당이나 사진 및 SNS를 이용하여 소개하세요.
-
-### 4. 사용법
-
-소스코드제출시 설치법이나 사용법을 작성하세요.
-
-### 5. 기타
-
-추가적인 내용은 자유롭게 작성하세요.
+본 프로젝트에서는 폭행 상황을 감지하면 현장에 경고음을 출력하고 관리자에게 메일을 전송하는 지능형 cctv 시스템을 구축하고자 한다. 행동 인식(action recognition)을 하는 AI 기술로 CCTV 영상을 분석하여 폭행 발생 여부를 판단한다. 폭행 상황으로 감지된 결과는 CCTV 관리자에게 전송하여 관리자가 위험 상황을 신속하게 대응하도록 보조 할 수 있다. 또한, CCTV의 스피커가 "범죄 멈춰" 음성을 출력함으로써, CCTV 설치 장소에서의 폭력 발생을 예방하는 효과도 기대된다.
 
 
-## Markdown을 사용하여 내용꾸미기
+<br/>
 
-Markdown은 작문을 스타일링하기위한 가볍고 사용하기 쉬운 구문입니다. 여기에는 다음을위한 규칙이 포함됩니다.
+## 2. Abstract
+
+
+This project aims to implement a CCTV system that can detect assault immediately. If assault detected, it makes an audio-"Stop Crime!"- and sends an email to a CCTV manager.  It determines whether there happened the situation by using an AI model, which recognizes several human actions. By sending the detected results to CCTV mangers, we hopefully expect the system to assist him or her to deal with the situation quickly and help to prevent attacks by making the audio.
+<br/>
+
+
+## 3. 소개 영상
+#### 구조도
+![KakaoTalk_20210525_164841255](https://user-images.githubusercontent.com/54228425/119645862-750bb380-be59-11eb-835b-893846f2ad40.jpg)
+
+
+
+#### 중간 발표 영상
+
+[![23조 중간 발표 영상](http://img.youtube.com/vi/mTJcfbAd-b8/0.jpg)](https://youtu.be/mTJcfbAd-b8?t=0s)
+
+#### 시연 동영상
+
+[![23조 시연 영상](http://img.youtube.com/vi/Wo_nVTp51OM/0.jpg)](https://youtu.be/Wo_nVTp51OM?t=0s)
+<br/>
+#### Slowfast
+##### abnormal
+
+https://user-images.githubusercontent.com/54228425/119828068-c76dd280-bf34-11eb-81d9-76145975be8e.mp4
+##### normal
+
+https://user-images.githubusercontent.com/54228425/119828130-d8b6df00-bf34-11eb-824e-f5133405bac6.mp4
+
+
+
+## 4. 팀 소개
+
+
+<img align=left src = "https://user-images.githubusercontent.com/21096675/112747542-12c93a80-8ff1-11eb-85e9-965e0c9e78d5.png" width="200px" height="180px">
 
 ```markdown
-Syntax highlighted code block
+😁 Name : 박건희(팀장)
+👨🏻‍💻 ID   : 20163107
+📧 Email: pgh9801@kookmin.ac.kr
 
-# Header 1
-## Header 2
-### Header 3
+🛠 Role:
+    - Web Application Server, Backend
+    - 데이터셋 자동 다운로더 구현
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-자세한 내용은 [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<img align=left src = "https://user-images.githubusercontent.com/21096675/113386677-b5086a00-93c5-11eb-8388-1901400ac829.png" width="200px" height="180px">
 
-### Support or Contact
+```markdown
+😁 Name : 김소망
+👨🏻‍💻 ID   : 20163094
+📧 Email: akfls745@kookmin.ac.kr
 
-readme 파일 생성에 추가적인 도움이 필요하면 [도움말](https://help.github.com/articles/about-readmes/) 이나 [contact support](https://github.com/contact) 을 이용하세요.
+🛠 Role :
+    - 보드 총괄
+    - Object Detection
+     
+```
+<img align=left src ="https://user-images.githubusercontent.com/21096675/112747550-178dee80-8ff1-11eb-9eb7-8059c506133e.png" width="200px" height="180px">
+
+```markdown
+😁 Name : 임태현
+👨🏻‍💻 ID   : 20163153
+📧 Email: plmoknijb15@kookmin.ac.kr
+
+🛠 Role :
+    - 데이터 셋 구축 & 모델 학습
+    - 알림 기능 &  Action classification 모델(slowFast) 성능 향상
+
+```
+
+<img align=left src = "https://user-images.githubusercontent.com/21096675/113386691-bafe4b00-93c5-11eb-98d9-9e3933ae8d1c.png" width="200px" height="180px">
+
+```markdown
+😁 Name : 함윤석
+👨🏻‍💻 ID   : 20163175
+📧 Email: ham5312@kookmin.ac.kr 
+
+🛠 Role :
+    - 데이터 셋 구축 & 모델 학습
+    - Ai Server 제작 & Action classification 모델(slowFast) 성능 향상
+
+```
+
+<br/>
+
+## 5. 사용법
+
+추후 pdf 파일 업로드 예정
